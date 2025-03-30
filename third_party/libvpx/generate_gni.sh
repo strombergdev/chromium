@@ -447,7 +447,7 @@ gen_config_files mac/x64 \
   "--target=x86_64-darwin9-gcc ${all_platforms} ${x86_platforms}"
 gen_config_files ios/arm-neon "--target=armv7-linux-gcc \
   --disable-runtime-cpu-detect ${all_platforms}"
-gen_config_files ios/arm64 "--target=armv8-linux-gcc ${all_platforms}"
+gen_config_files ios/arm64 "--target=armv8-linux-gcc ${all_platforms} ${HIGHBD}"
 gen_config_files nacl "--target=generic-gnu $HIGHBD ${all_platforms}"
 
 echo "Remove temporary directory."
